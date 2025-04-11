@@ -29,28 +29,28 @@
 * **Geant4 데이터 파일:** 환경 변수 (예: `G4LEDATA`, `G4ENSDFSTATEDATA` 등)가 올바르게 설정되어 있어야 합니다.
 
 ## 프로젝트 구조
-
-*your_project_name/
-*├── CMakeLists.txt           # 빌드 스크립트
-*├── include/                 # 헤더 파일 디렉토리
-*│   ├── ActionInitialization.hh
-*│   ├── DetectorConstruction.hh
-*│   ├── EventAction.hh
-*│   ├── PhysicsList.hh
-*│   ├── PrimaryGeneratorAction.hh
-*│   ├── RunAction.hh
-*│   └── SteppingAction.hh
-*├── src/                     # 소스 파일 디렉토리
-*│   ├── ActionInitialization.cc
-*│   ├── DetectorConstruction.cc
-*│   ├── EventAction.cc
-*│   ├── PhysicsList.cc
-*│   ├── PrimaryGeneratorAction.cc
-*│   ├── RunAction.cc
-*│   └── SteppingAction.cc
-*├── main.cc                  # 메인 어플리케이션 파일
-*└── README.md                # 이 파일
-
+"""
+your_project_name/
+├── CMakeLists.txt           # 빌드 스크립트
+├── include/                 # 헤더 파일 디렉토리
+│   ├── ActionInitialization.hh
+│   ├── DetectorConstruction.hh
+│   ├── EventAction.hh
+│   ├── PhysicsList.hh
+│   ├── PrimaryGeneratorAction.hh
+│   ├── RunAction.hh
+│   └── SteppingAction.hh
+├── src/                     # 소스 파일 디렉토리
+│   ├── ActionInitialization.cc
+│   ├── DetectorConstruction.cc
+│   ├── EventAction.cc
+│   ├── PhysicsList.cc
+│   ├── PrimaryGeneratorAction.cc
+│   ├── RunAction.cc
+│   └── SteppingAction.cc
+├── main.cc                  # 메인 어플리케이션 파일
+└── README.md                # 이 파일
+"""
 ## 주요 특징 (템플릿 수준)
 
 * 표준 Geant4 어플리케이션 구조 사용 (`main`, `DetectorConstruction`, `PhysicsList`, `ActionInitialization` 등).
