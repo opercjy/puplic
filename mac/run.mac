@@ -1,0 +1,19 @@
+# --- 시각화 설정 (GUI 모드용) ---
+/vis/open OGL
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi 60 60
+/vis/scene/add/trajectories smooth
+/vis/scene/endOfEventAction accumulate
+
+# --- 입자 타입 변경 ---
+# /gun/particle gamma
+/gun/particle e-
+# /gun/particle proton
+# /gun/particle carbon
+
+# --- 에너지 설정 ---
+/gun/energy 1 MeV
+
+# --- 실행 ---
+# /run/initialize # main.cc 에서 이미 호출됨 (GUI모드 init.mac 등에서)
+/run/beamOn 1000 # 1000개의 이벤트 실행
